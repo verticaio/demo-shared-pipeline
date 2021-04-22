@@ -12,6 +12,11 @@ def call (body) {
                echo "${config.message}"
             }
          }
+         stage('Echo from the other side') {
+            steps {
+               echo "${config.message2}"
+            }
+         }         
       }
    }
 }
